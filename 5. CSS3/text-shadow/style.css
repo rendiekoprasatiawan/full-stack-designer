@@ -1,0 +1,20 @@
+/*
+  value di text-shadow ada 4:
+  text-shadow: <x-offset> <y-offset> <blur> <color>;
+*/
+
+.container h1 {
+  font-size: 100px;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+
+  /* Bisa juga menggunakan multiple shadow pada text*/
+  /* text-shadow: 5px 5px 10px green, -5px -5px 10px red; */
+
+  /* text seoalah-olah 3 dimensi */
+  /* 1. kita kasi color: white; */
+  color: white;
+  text-shadow: 0 2px 1px black;
+
+  /* nih contohnya ada di link: https://codepen.io/webprogrammingunpas/pen/YWyjjP */
+}

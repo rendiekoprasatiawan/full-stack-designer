@@ -1,0 +1,12 @@
+/* pada dasarnya kita cari aja dulu yang kompatibel dengan web kita atau nggak */
+/* ini tuh sebenernya karena make yang baru makanya ada yang belum dapat update gitu, dan cara ngakalinnya ya make vendor prefix */
+/* cari aja deh apa itu vendor prefix apa */
+/* yang pasti kalo mau liat attribute apa aja yang belum ada di web browser updatenya */
+/*
+kunjungi link ini aja:
+souldiprefix.com
+caniuse.com
+http://pleeease.io/play/
+*/
+
+/* sangat gampang kok, tinggal buka aja tuh pleease apa itu, terus buat aja css yang belum kompatibel tsb dan di generate aja, selesai */

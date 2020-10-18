@@ -1,0 +1,5 @@
+-CSS3 kaya akan fitur yang ditambahkann pada CSS2
+- Kenapa harus belajar CSS3?
+1. Karna CSS3 kaya akan modul-modul
+2. Membuat website menjadi lebih fleksibel
+3. menghindari penggunaan selector yang boros

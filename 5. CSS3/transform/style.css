@@ -1,0 +1,44 @@
+/* transform ini adalah properti css3 yang memungkinkan kita dapat memanipulasi format visual dari elemen HTML */
+/* transformasi 2D dan 3D*/
+/* tapi kali ini cuma menggunakan 2D saja */
+
+/*
+- fungsi transformasi:
+  scale -> memperbesar / memperkecil
+  rotate -> memutar
+  skew -> membuat condong/miring
+  translate -> mengubah posisi
+*/
+
+/* 
+- cheat-sheet:
+  scale(angka)
+  scaleX(angka)
+  scaleY(angka)
+  rotate(deg)
+  rotateX(deg)
+  rotateY(deg)
+  skew(deg)
+  skewX(deg)
+  skewY(deg)
+  translate(px)
+  translateX(px)
+  translateY(p)
+*/
+
+p {
+  font-size: 20px;
+  text-align: center;
+}
+
+.kotak {
+  width: 200px;
+  height: 200px;
+  background-color: lightblue;
+  margin: 50px auto 0;
+  transition: 1s;
+}
+
+.kotak:hover {
+  transform: scale(1.5, 2);
+}

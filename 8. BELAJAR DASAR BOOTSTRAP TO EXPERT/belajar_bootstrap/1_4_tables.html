@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <title>Belajar Bootstrap</title>
+</head>
+
+<body>
+  <header>
+    <h1 class="display-3 text-center my-4">Tables</h1>
+    <div class="container">
+      <div class="row">
+        <div class="col-md">
+          <div class="dropdown">
+            <button class="btn btn-primary btn-block dropdown-toggle" type="button" data-toggle="dropdown">
+              1: HTML Elements
+            </button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="1_2_basic_typography.html">1.2 Basic Typography</a>
+              <a class="dropdown-item" href="1_3_image_figures.html">1.3 Image & Figures</a>
+              <a class="dropdown-item active" href="1_4_tables.html">1.4 Tables</a>
+              <a class="dropdown-item" href="1_5_code.html">1.5 Code</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md">
+          <div class="dropdown">
+            <button class="btn btn-success btn-block dropdown-toggle" type="button" data-toggle="dropdown">
+              2: Utilities
+            </button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="2_2_text_alignment_display.html">2.2 Text Alignment & Display</a>
+              <a class="dropdown-item" href="2_3_floats_position.html">2.3 Floats & Position</a>
+              <a class="dropdown-item" href="2_4_colors_background.html">2.4 Colors & Background</a>
+              <a class="dropdown-item" href="2_5_spacing_sizing.html">2.5 Spacing & Sizing</a>
+              <a class="dropdown-item" href="2_6_border_shadow.html">2.6 Border & Shadow</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md">
+          <div class="dropdown">
+            <button class="btn btn-info btn-block dropdown-toggle" type="button" data-toggle="dropdown">
+              3: CSS Components
+            </button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="3_2_buttons.html">3.2 Buttons</a>
+              <a class="dropdown-item" href="3_3_nav_navbar.html">3.3 Nav & Navbar</a>
+              <a class="dropdown-item" href="3_4_jumbotron.html">3.4 Jumbotron</a>
+              <a class="dropdown-item" href="3_5_list_groups_badges.html">3.5 List Groups & Badges</a>
+              <a class="dropdown-item" href="3_6_form_inputs.html">3.6 Form & Inputs</a>
+              <a class="dropdown-item" href="3_7_input_groups.html">3.7 Input Groups</a>
+              <a class="dropdown-item" href="3_8_alerts_progress.html">3.8 Alerts & Progress</a>
+              <a class="dropdown-item" href="3_9_pagination.html">3.9 Pagination</a>
+              <a class="dropdown-item" href="3_10_cards.html">3.10 Cards</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md">
+          <div class="dropdown">
+            <button class="btn btn-warning btn-block dropdown-toggle" type="button" data-toggle="dropdown">
+              4: Grid & Flexbox
+            </button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="4_2_container_row_column.html">4.2 Container, Row & Column</a>
+              <a class="dropdown-item" href="4_3_responsive_breakpoints.html">4.3 Responsive Breakpoints</a>
+              <a class="dropdown-item" href="4_4_grid_system.html">4.4 Grid System</a>
+              <a class="dropdown-item" href="4_5_grid_alignment.html">4.5 Grid Alignment</a>
+              <a class="dropdown-item" href="4_6_flexbox.html">4.6 Flexbox</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md">
+          <div class="dropdown">
+            <button class="btn btn-danger btn-block dropdown-toggle" type="button" data-toggle="dropdown">
+              5: JavaScript Widgets
+            </button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="5_2_carousel.html">5.2 Carousel</a>
+              <a class="dropdown-item" href="5_3_collapse.html">5.3 Collapse</a>
+              <a class="dropdown-item" href="5_4_dropdowns.html">5.4 Dropdowns</a>
+              <a class="dropdown-item" href="5_5_popovers.html">5.5 Popovers</a>
+              <a class="dropdown-item" href="5_6_modals.html">5.6 Modals</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+  </header>
+
+  <!--#################### MULAI ######################-->
+  <div class="container">
+
+    <h5>Normal Table</h5>
+
+    <table class="table">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Nama</th>
+          <th>Kota Asal</th>
+          <th>Email</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>1</th>
+          <td>Sandhika Galih</td>
+          <td>Bandung</td>
+          <td>sandhikagalih@gmail.com</td>
+        </tr>
+        <tr>
+          <th>2</th>
+          <td>Erik Doank</td>
+          <td>Jakarta</td>
+          <td>erik@icloud.com</td>
+        </tr>
+        <tr>
+          <th>3</th>
+          <td>Doddy Ferdiansyah</td>
+          <td>Purwakarta</td>
+          <td>doy@yahoo.com</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <br><br>
+
+    <h5>Inverse / Dark Table</h5>
+
+    <table class="table table-dark">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Nama</th>
+          <th>Kota Asal</th>
+          <th>Email</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>1</th>
+          <td>Sandhika Galih</td>
+          <td>Bandung</td>
+          <td>sandhikagalih@gmail.com</td>
+        </tr>
+        <tr>
+          <th>2</th>
+          <td>Erik Doank</td>
+          <td>Jakarta</td>
+          <td>erik@icloud.com</td>
+        </tr>
+        <tr>
+          <th>3</th>
+          <td>Doddy Ferdiansyah</td>
+          <td>Purwakarta</td>
+          <td>doy@yahoo.com</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <br><br>
+
+    <h5>Table Head Inverse</h5>
+
+    <table class="table">
+      <thead class="thead-dark">
+        <tr>
+          <th>#</th>
+          <th>Nama</th>
+          <th>Kota Asal</th>
+          <th>Email</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>1</th>
+          <td>Sandhika Galih</td>
+          <td>Bandung</td>
+          <td>sandhikagalih@gmail.com</td>
+        </tr>
+        <tr>
+          <th>2</th>
+          <td>Erik Doank</td>
+          <td>Jakarta</td>
+          <td>erik@icloud.com</td>
+        </tr>
+        <tr>
+          <th>3</th>
+          <td>Doddy Ferdiansyah</td>
+          <td>Purwakarta</td>
+          <td>doy@yahoo.com</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <br><br>
+
+    <h5>Striped Table</h5>
+
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Nama</th>
+          <th>Kota Asal</th>
+          <th>Email</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>1</th>
+          <td>Sandhika Galih</td>
+          <td>Bandung</td>
+          <td>sandhikagalih@gmail.com</td>
+        </tr>
+        <tr>
+          <th>2</th>
+          <td>Erik Doank</td>
+          <td>Jakarta</td>
+          <td>erik@icloud.com</td>
+        </tr>
+        <tr>
+          <th>3</th>
+          <td>Doddy Ferdiansyah</td>
+          <td>Purwakarta</td>
+          <td>doy@yahoo.com</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <br><br>
+
+    <h5>Bordered Table</h5>
+
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Nama</th>
+          <th>Kota Asal</th>
+          <th>Email</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>1</th>
+          <td>Sandhika Galih</td>
+          <td>Bandung</td>
+          <td>sandhikagalih@gmail.com</td>
+        </tr>
+        <tr>
+          <th>2</th>
+          <td>Erik Doank</td>
+          <td>Jakarta</td>
+          <td>erik@icloud.com</td>
+        </tr>
+        <tr>
+          <th>3</th>
+          <td>Doddy Ferdiansyah</td>
+          <td>Purwakarta</td>
+          <td>doy@yahoo.com</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <br><br>
+
+    <h5>Borderless Table</h5>
+
+    <table class="table table-borderless">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Nama</th>
+          <th>Kota Asal</th>
+          <th>Email</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>1</th>
+          <td>Sandhika Galih</td>
+          <td>Bandung</td>
+          <td>sandhikagalih@gmail.com</td>
+        </tr>
+        <tr>
+          <th>2</th>
+          <td>Erik Doank</td>
+          <td>Jakarta</td>
+          <td>erik@icloud.com</td>
+        </tr>
+        <tr>
+          <th>3</th>
+          <td>Doddy Ferdiansyah</td>
+          <td>Purwakarta</td>
+          <td>doy@yahoo.com</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <br><br>
+
+    <h5>Hoverable</h5>
+
+    <table class="table table-hover">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Nama</th>
+          <th>Kota Asal</th>
+          <th>Email</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>1</th>
+          <td>Sandhika Galih</td>
+          <td>Bandung</td>
+          <td>sandhikagalih@gmail.com</td>
+        </tr>
+        <tr>
+          <th>2</th>
+          <td>Erik Doank</td>
+          <td>Jakarta</td>
+          <td>erik@icloud.com</td>
+        </tr>
+        <tr>
+          <th>3</th>
+          <td>Doddy Ferdiansyah</td>
+          <td>Purwakarta</td>
+          <td>doy@yahoo.com</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <br><br>
+
+    <h5>Mewarnai Tabel</h5>
+
+    <table class="table">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Nama</th>
+          <th>Kota Asal</th>
+          <th>Email</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="table-success">
+          <th>1</th>
+          <td>Sandhika Galih</td>
+          <td>Bandung</td>
+          <td>sandhikagalih@gmail.com</td>
+        </tr>
+        <tr class="table-danger">
+          <th>2</th>
+          <td>Erik Doank</td>
+          <td>Jakarta</td>
+          <td>erik@icloud.com</td>
+        </tr>
+        <tr class="table-warning">
+          <th>3</th>
+          <td>Doddy Ferdiansyah</td>
+          <td>Purwakarta</td>
+          <td>doy@yahoo.com</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <br><br>
+
+    <h5>Small Table</h5>
+
+    <table class="table table-sm table-hover table-striped">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Nama</th>
+          <th>Kota Asal</th>
+          <th>Email</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>1</th>
+          <td>Sandhika Galih</td>
+          <td>Bandung</td>
+          <td>sandhikagalih@gmail.com</td>
+        </tr>
+        <tr>
+          <th>2</th>
+          <td>Erik Doank</td>
+          <td>Jakarta</td>
+          <td>erik@icloud.com</td>
+        </tr>
+        <tr>
+          <th>3</th>
+          <td>Doddy Ferdiansyah</td>
+          <td>Purwakarta</td>
+          <td>doy@yahoo.com</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <br><br>
+
+    <h5>Responsive Table</h5>
+
+    <table class="table table-responsive">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Nama</th>
+          <th>Alamat</th>
+          <th>Kota Asal</th>
+          <th>No. HP</th>
+          <th>Pekerjaan</th>
+          <th>Email</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th>1</th>
+          <td>Sandhika Galih</td>
+          <td>Jl. Setiabudhi No. 193</td>
+          <td>Bandung</td>
+          <td>0812345678</td>
+          <td>Dosen</td>
+          <td>sandhikagalih@gmail.com</td>
+        </tr>
+        <tr>
+          <th>2</th>
+          <td>Erik Doank</td>
+          <td>Jl. Dago No. 2</td>
+          <td>Jakarta</td>
+          <td>08543212345</td>
+          <td>Wiraswasta</td>
+          <td>erik@icloud.com</td>
+        </tr>
+        <tr>
+          <th>3</th>
+          <td>Doddy Ferdiansyah</td>
+          <td>Jl. Gunung Bambu No.12A</td>
+          <td>Purwakarta</td>
+          <td>08112233445</td>
+          <td>Pegawai Negeri</td>
+          <td>doy@yahoo.com</td>
+        </tr>
+      </tbody>
+    </table>
+
+
+  </div>
+  <!--#################### AKHIR ######################-->
+
+
+
+  <div style="margin-top:500px;"></div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+    integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+</body>
+
+</html>

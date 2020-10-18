@@ -1,0 +1,27 @@
+/* transition dapat mengubah nila dari properti secara halus */
+/* transition: [property] <durasi> [fungsi] [delay]; */
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 900px;
+  margin: 10px auto;
+  border: 5px solid black;
+}
+
+.kotak {
+  width: 100px;
+  height: 100px;
+  background-color: salmon;
+  /* untuk satu sisi, kalau dihapus maka all defaultnya dan bisa dijuga ga dikasi atau none */
+  transition: margin-left 1s;
+}
+
+.container:hover .kotak {
+  transform: rotate(720deg);
+  margin-left: 800px;
+  background-color: royalblue;
+}

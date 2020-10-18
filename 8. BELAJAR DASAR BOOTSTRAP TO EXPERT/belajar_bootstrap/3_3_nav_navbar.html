@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <title>Belajar Bootstrap</title>
+</head>
+
+<body>
+  <header>
+    <h1 class="display-3 text-center my-4">Nav & Navbar</h1>
+    <div class="container">
+      <div class="row">
+        <div class="col-md">
+          <div class="dropdown">
+            <button class="btn btn-primary btn-block dropdown-toggle" type="button" data-toggle="dropdown">
+              1: HTML Elements
+            </button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="1_2_basic_typography.html">1.2 Basic Typography</a>
+              <a class="dropdown-item" href="1_3_image_figures.html">1.3 Image & Figures</a>
+              <a class="dropdown-item" href="1_4_tables.html">1.4 Tables</a>
+              <a class="dropdown-item" href="1_5_code.html">1.5 Code</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md">
+          <div class="dropdown">
+            <button class="btn btn-success btn-block dropdown-toggle" type="button" data-toggle="dropdown">
+              2: Utilities
+            </button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="2_2_text_alignment_display.html">2.2 Text Alignment & Display</a>
+              <a class="dropdown-item" href="2_3_floats_position.html">2.3 Floats & Position</a>
+              <a class="dropdown-item" href="2_4_colors_background.html">2.4 Colors & Background</a>
+              <a class="dropdown-item" href="2_5_spacing_sizing.html">2.5 Spacing & Sizing</a>
+              <a class="dropdown-item" href="2_6_border_shadow.html">2.6 Border & Shadow</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md">
+          <div class="dropdown">
+            <button class="btn btn-info btn-block dropdown-toggle" type="button" data-toggle="dropdown">
+              3: CSS Components
+            </button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="3_2_buttons.html">3.2 Buttons</a>
+              <a class="dropdown-item active" href="3_3_nav_navbar.html">3.3 Nav & Navbar</a>
+              <a class="dropdown-item" href="3_4_jumbotron.html">3.4 Jumbotron</a>
+              <a class="dropdown-item" href="3_5_list_groups_badges.html">3.5 List Groups & Badges</a>
+              <a class="dropdown-item" href="3_6_form_inputs.html">3.6 Form & Inputs</a>
+              <a class="dropdown-item" href="3_7_input_groups.html">3.7 Input Groups</a>
+              <a class="dropdown-item" href="3_8_alerts_progress.html">3.8 Alerts & Progress</a>
+              <a class="dropdown-item" href="3_9_pagination.html">3.9 Pagination</a>
+              <a class="dropdown-item" href="3_10_cards.html">3.10 Cards</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md">
+          <div class="dropdown">
+            <button class="btn btn-warning btn-block dropdown-toggle" type="button" data-toggle="dropdown">
+              4: Grid & Flexbox
+            </button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="4_2_container_row_column.html">4.2 Container, Row & Column</a>
+              <a class="dropdown-item" href="4_3_responsive_breakpoints.html">4.3 Responsive Breakpoints</a>
+              <a class="dropdown-item" href="4_4_grid_system.html">4.4 Grid System</a>
+              <a class="dropdown-item" href="4_5_grid_alignment.html">4.5 Grid Alignment</a>
+              <a class="dropdown-item" href="4_6_flexbox.html">4.6 Flexbox</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md">
+          <div class="dropdown">
+            <button class="btn btn-danger btn-block dropdown-toggle" type="button" data-toggle="dropdown">
+              5: JavaScript Widgets
+            </button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="5_2_carousel.html">5.2 Carousel</a>
+              <a class="dropdown-item" href="5_3_collapse.html">5.3 Collapse</a>
+              <a class="dropdown-item" href="5_4_dropdowns.html">5.4 Dropdowns</a>
+              <a class="dropdown-item" href="5_5_popovers.html">5.5 Popovers</a>
+              <a class="dropdown-item" href="5_6_modals.html">5.6 Modals</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+  </header>
+
+  <!--#################### MULAI ######################-->
+  <div class="container">
+
+    <h5>Nav / Navigasi Sederhana</h5>
+    <ul class="nav">
+      <li class="nav-item">
+        <a class="nav-link active" href="#">Active</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Link</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+      </li>
+    </ul>
+
+    <br><br>
+    <hr>
+
+    <h5>Nav / Navigasi Sederhana (Tanpa tag &lt;ul&gt;)</h5>
+    <nav class="nav">
+      <a class="nav-link active" href="#">Active</a>
+      <a class="nav-link" href="#">Link</a>
+      <a class="nav-link" href="#">Link</a>
+      <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+    </nav>
+
+    <br><br>
+    <hr>
+
+    <h5>Nav berdasarkan Alignment</h5>
+    <nav class="nav justify-content-center">
+      <a class="nav-link active" href="#">Active</a>
+      <a class="nav-link" href="#">Link</a>
+      <a class="nav-link" href="#">Link</a>
+      <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+    </nav>
+
+    <br><br>
+
+    <nav class="nav justify-content-end">
+      <a class="nav-link active" href="#">Active</a>
+      <a class="nav-link" href="#">Link</a>
+      <a class="nav-link" href="#">Link</a>
+      <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+    </nav>
+
+    <br><br>
+    <hr>
+
+    <h5>Nav Vertical</h5>
+    <nav class="nav flex-column">
+      <a class="nav-link active" href="#">Active</a>
+      <a class="nav-link" href="#">Link</a>
+      <a class="nav-link" href="#">Link</a>
+      <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+    </nav>
+
+    <br><br>
+    <hr>
+
+    <h5>Nav Pills</h5>
+    <nav class="nav nav-pills">
+      <a class="nav-link active" href="#">Link 1</a>
+      <a class="nav-link" href="#">Link 2</a>
+      <a class="nav-link" href="#">Link 3</a>
+      <a class="nav-link" href="#">Link 4</a>
+    </nav>
+
+
+    <br><br>
+    <hr>
+
+    <h5>Fill & Justify</h5>
+    <nav class="nav nav-fill nav-pills">
+      <a class="nav-item nav-link" href="#">Link 1</a>
+      <a class="nav-item nav-link active" href="#">Link 2</a>
+      <a class="nav-item nav-link" href="#">Link 3</a>
+      <a class="nav-item nav-link" href="#">Link 4</a>
+    </nav>
+
+    <br><br>
+    <hr>
+
+    <h5>Simple Navbar</h5>
+    <nav class="navbar navbar-expand-sm navbar-light bg-light mb-3">
+      <div class="container">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+  </div> <!-- container -->
+
+  <br><br><br>
+  <hr>
+
+  <div class="container">
+    <h5>Simple Navbar (tanpa container)</h5>
+  </div>
+  <nav class="navbar navbar-expand-sm navbar-light bg-light mb-3">
+    <div class="container">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <br><br><br>
+  <hr>
+
+  <div class="container">
+    <h5>Navbar Lengkap</h5>
+  </div>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Link</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Dropdown
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Something else here</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <br><br><br>
+  <hr>
+
+  <div class="container">
+    <h5>Mengubah Warna Navbar</h5>
+  </div>
+
+  <nav class="navbar navbar-expand-sm navbar-dark bg-primary mb-3">
+    <div class="container">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <nav class="navbar navbar-expand-sm navbar-dark bg-success mb-3">
+    <div class="container">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <nav class="navbar navbar-expand-sm navbar-light bg-warning mb-3">
+    <div class="container">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <nav class="navbar navbar-expand-sm navbar-dark mb-3" style="background-color: salmon">
+    <div class="container">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <br><br><br>
+  <hr>
+
+  <div class="container">
+    <h5>Penempatan Navbar</h5>
+  </div>
+
+  <!-- fixed-top, fixed-bottom, sticky-top -->
+  <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!--#################### AKHIR ######################-->
+
+
+
+  <div style="margin-top:5000px;"></div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+    integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>

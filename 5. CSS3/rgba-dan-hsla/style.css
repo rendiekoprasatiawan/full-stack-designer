@@ -1,0 +1,28 @@
+/* nah kan pada tutorial opacity kita ngubah opacity parent, maka childnya juga berubah */
+/* tapi pada rgba dan hsla ini berbeda, ketika kita berikan kontrasna mau berapa ke pada parent, maka childnya tidak akan terpengaruh.. kenapa? karena kita langsung mengubah dari warna backgroundnya, bukan keseluruhan */
+body {
+  background-image: url(img/bg.jpg);
+  background-size: cover;
+}
+
+.container {
+  width: 200px;
+  height: 200px;
+  /* background-color: rgba(255, 102, 0, 0.5); */
+  background-color: hsla(24, 100%, 63%, 0.5);
+  margin: 200px auto;
+  position: relative;
+}
+
+.container2 {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  position: absolute;
+  right: -50px;
+  bottom: -50px;
+}
+
+/* hsla juga sama seperti rgba, cuma nilai aja berbeda, karena ya rgb kan emg beda dengan hsla
+cari aja di color picker, ada semua mau rgb, hexa, hsl ada semuua */
+/* untuk a : itu kecerahannya */

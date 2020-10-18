@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <title>Belajar Bootstrap</title>
+</head>
+
+<body>
+  <header>
+    <h1 class="display-3 text-center my-4">Form & Inputs</h1>
+    <div class="container">
+      <div class="row">
+        <div class="col-md">
+          <div class="dropdown">
+            <button class="btn btn-primary btn-block dropdown-toggle" type="button" data-toggle="dropdown">
+              1: HTML Elements
+            </button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="1_2_basic_typography.html">1.2 Basic Typography</a>
+              <a class="dropdown-item" href="1_3_image_figures.html">1.3 Image & Figures</a>
+              <a class="dropdown-item" href="1_4_tables.html">1.4 Tables</a>
+              <a class="dropdown-item" href="1_5_code.html">1.5 Code</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md">
+          <div class="dropdown">
+            <button class="btn btn-success btn-block dropdown-toggle" type="button" data-toggle="dropdown">
+              2: Utilities
+            </button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="2_2_text_alignment_display.html">2.2 Text Alignment & Display</a>
+              <a class="dropdown-item" href="2_3_floats_position.html">2.3 Floats & Position</a>
+              <a class="dropdown-item" href="2_4_colors_background.html">2.4 Colors & Background</a>
+              <a class="dropdown-item" href="2_5_spacing_sizing.html">2.5 Spacing & Sizing</a>
+              <a class="dropdown-item" href="2_6_border_shadow.html">2.6 Border & Shadow</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md">
+          <div class="dropdown">
+            <button class="btn btn-info btn-block dropdown-toggle" type="button" data-toggle="dropdown">
+              3: CSS Components
+            </button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="3_2_buttons.html">3.2 Buttons</a>
+              <a class="dropdown-item" href="3_3_nav_navbar.html">3.3 Nav & Navbar</a>
+              <a class="dropdown-item" href="3_4_jumbotron.html">3.4 Jumbotron</a>
+              <a class="dropdown-item" href="3_5_list_groups_badges.html">3.5 List Groups & Badges</a>
+              <a class="dropdown-item active" href="3_6_form_inputs.html">3.6 Form & Inputs</a>
+              <a class="dropdown-item" href="3_7_input_groups.html">3.7 Input Groups</a>
+              <a class="dropdown-item" href="3_8_alerts_progress.html">3.8 Alerts & Progress</a>
+              <a class="dropdown-item" href="3_9_pagination.html">3.9 Pagination</a>
+              <a class="dropdown-item" href="3_10_cards.html">3.10 Cards</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md">
+          <div class="dropdown">
+            <button class="btn btn-warning btn-block dropdown-toggle" type="button" data-toggle="dropdown">
+              4: Grid & Flexbox
+            </button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="4_2_container_row_column.html">4.2 Container, Row & Column</a>
+              <a class="dropdown-item" href="4_3_responsive_breakpoints.html">4.3 Responsive Breakpoints</a>
+              <a class="dropdown-item" href="4_4_grid_system.html">4.4 Grid System</a>
+              <a class="dropdown-item" href="4_5_grid_alignment.html">4.5 Grid Alignment</a>
+              <a class="dropdown-item" href="4_6_flexbox.html">4.6 Flexbox</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md">
+          <div class="dropdown">
+            <button class="btn btn-danger btn-block dropdown-toggle" type="button" data-toggle="dropdown">
+              5: JavaScript Widgets
+            </button>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="5_2_carousel.html">5.2 Carousel</a>
+              <a class="dropdown-item" href="5_3_collapse.html">5.3 Collapse</a>
+              <a class="dropdown-item" href="5_4_dropdowns.html">5.4 Dropdowns</a>
+              <a class="dropdown-item" href="5_5_popovers.html">5.5 Popovers</a>
+              <a class="dropdown-item" href="5_6_modals.html">5.6 Modals</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr>
+  </header>
+
+  <!--#################### MULAI ######################-->
+  <div class="container">
+
+    <h5>Elemen Form</h5>
+    <form>
+      <div class="form-group">
+        <label for="name">Nama</label>
+        <input class="form-control" type="text" id="nama" placeholder="Masukkan nama">
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input class="form-control form-control-lg" type="email" id="email" placeholder="Masukkan email">
+        <small class="form-text text-muted">Email anda tidak akan dibagikan</small>
+      </div>
+
+      <div class="form-group">
+        <label for="company">Sekolah / Kampus</label>
+        <input class="form-control form-control-sm" type="text" id="company"
+          placeholder="Masukkan nama sekolah / kampus">
+      </div>
+
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input class="form-control" type="password" id="password" placeholder="Password">
+      </div>
+
+      <!-- CHECKBOX -->
+      <div class="form-group form-check">
+        <label class="form-check-label" for="remember">
+          <input type="checkbox" class="form-check-input" id="remember">
+          Ingat saya
+        </label>
+      </div>
+
+      <!-- READONLY -->
+      <div class="form-group">
+        <label for="nim">Nomor Induk Mahasiswa</label>
+        <input class="form-control" type="text" id="nim" placeholder="043040023" readonly>
+      </div>
+
+
+      <!-- RADIO -->
+      <div class="form-group form-check">
+        <label class="form-check-label" for="pria">
+          <input class="form-check-input" type="radio" name="gender" id="pria" value="pria" checked>
+          Pria
+        </label>
+      </div>
+      <div class="form-group form-check">
+        <label class="form-check-label" for="wanita">
+          <input class="form-check-input" type="radio" name="gender" id="wanita" value="wanita" checked>
+          Wanita
+        </label>
+      </div>
+
+      <!-- SELECT / COMBO BOX -->
+      <div class="form-group">
+        <label for="jurusan">Jurusan</label>
+        <select class="form-control" id="jurusan">
+          <option value="if">Teknik Informatika</option>
+          <option value="ms">Teknik Mesin</option>
+          <option value="ak">Akuntansi</option>
+        </select>
+      </div>
+
+      <!-- TEXTAREA -->
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea class="form-control" id="message" rows="3"></textarea>
+      </div>
+
+      <!-- FILE INPUT -->
+      <div class="form-group">
+        <label for="file">File input</label>
+        <input type="file" id="file" class="form-control-file">
+        <small class="form-text text-muted" id="fileHelp">Ukuran maksimal 3mb</small>
+      </div>
+
+      <!-- CUSTOM FILE -->
+      <div class="custom-file">
+        <input type="file" id="myfile" class="custom-file-input">
+        <label class="custom-file-label" for="myfile">Pilih file</label>
+      </div>
+      <br>
+      <br>
+
+      <!-- RANGE -->
+      <div class="form-group">
+        <label for="membership">Membership Level</label>
+        <input class="custom-range" min="1" max="5" step="1" value="1" type="range">
+      </div>
+
+      <br>
+
+      <button class="btn btn-primary btn-block" type="submit">Submit</button>
+    </form>
+
+    <br><br><br>
+    <hr>
+
+    <h5>Inline Form</h5>
+    <form class="form-inline">
+      <input class="form-control mr-2" type="text" id="username" placeholder="Enter username">
+      <input class="form-control mr-2" type="text" id="password" placeholder="Password">
+      <div class="form-check">
+        <label class="form-check-label mr-2">
+          <input type="checkbox" class="form-check-input"> Remember me
+        </label>
+      </div>
+
+      <button class="btn btn-light" type="submit">Submit</button>
+    </form>
+
+    <br><br><br>
+    <hr>
+
+    <h5>Horizontal Form</h5>
+    <form>
+      <div class="form-group row">
+        <label for="email" class="col-sm-2 col-form-label">Email</label>
+        <div class="col-sm-10">
+          <input type="email" class="form-control" id="email" placeholder="Masukkan Email">
+        </div>
+      </div>
+      <div class="form-group row">
+        <label for="password" class="col-sm-2 col-form-label">Password</label>
+        <div class="col-sm-10">
+          <input type="password" class="form-control" id="password" placeholder="Password">
+        </div>
+      </div>
+      <div class="form-group row justify-content-end">
+        <div class="col-sm-10">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="remember">
+            <label class="form-check-label" for="remember">Ingat saya</label>
+          </div>
+        </div>
+      </div>
+      <div class="form-group row">
+        <div class="col-sm-10">
+          <button type="submit" class="btn btn-primary">Sign in</button>
+        </div>
+      </div>
+    </form>
+
+
+    <br><br><br>
+    <hr>
+
+    <h5>Form Row</h5>
+    <form>
+      <div class="form-row">
+        <div class="col">
+          <input type="text" class="form-control" placeholder="First name">
+        </div>
+        <div class="col">
+          <input type="text" class="form-control" placeholder="Last name">
+        </div>
+      </div>
+    </form>
+
+
+    <br><br><br>
+    <hr>
+
+    <h5>Form Validation</h5>
+    <div class="form-group">
+      <label for="username">Username</label>
+      <input class="form-control is-valid" type="text" id="username">
+    </div>
+    <div class="form-group">
+      <label for="password">Password</label>
+      <input class="form-control is-invalid" type="text" id="password">
+      <div class="invalid-feedback">
+        Password not strong enough
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="password2">Confirm Password</label>
+      <input class="form-control is-invalid" type="text" id="password2">
+      <div class="invalid-feedback">
+        Password does not match
+      </div>
+    </div>
+
+  </div>
+
+  <!--#################### AKHIR ######################-->
+
+
+
+  <div style="margin-top:500px;"></div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+    integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous">
+  </script>
+</body>
+
+</html>

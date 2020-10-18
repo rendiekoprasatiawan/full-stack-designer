@@ -1,0 +1,31 @@
+/* untuk animasi itu coba-coba aja deh, bisa bisa! */
+
+.kotak {
+  width: 200px;
+  height: 200px;
+  background-color: salmon;
+}
+
+.kotak:hover {
+  /* iteration-count: <angka> | infinite */
+  /* direction: normal | reverse | alternate | alternate-reverse */
+  /* fill-mode: none | forwards | backwards | both */
+  /* play-state: running | paused */
+  animation: animasiKotak 2s ease forwards;
+}
+
+@keyframes animasiKotak {
+  0% {
+    width: 200px;
+  }
+
+  50% {
+    width: 500px;
+    height: 200px;
+  }
+
+  100% {
+    width: 500px;
+    height: 500px;
+  }
+}

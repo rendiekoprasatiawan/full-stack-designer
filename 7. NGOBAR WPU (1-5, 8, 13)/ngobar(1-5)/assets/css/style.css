@@ -1,0 +1,76 @@
+.jumbotron {
+  background-image: url(../../img/header/header-bg.png);
+  min-height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.jumbotron .profile img {
+  width: 200px;
+  border: 5px solid white;
+  text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+}
+
+.jumbotron .text h1,
+.jumbotron .text p {
+  text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+}
+
+hr {
+  width: 250px;
+  border-top: 3px solid #3b1b1b;
+}
+
+section {
+  min-height: 600px;
+}
+
+.pKiri,
+.pKanan {
+  opacity: 0;
+  transform: translate(-50px, 0) rotate(15deg);
+  transition: 1s;
+}
+
+.pKanan {
+  transform: translate(50px, 0) rotate(-15deg);
+}
+
+.pKiri.pMuncul,
+.pKanan.pMuncul {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+.textKiri {
+  font-size: 12px;
+}
+
+.sKiri {
+  background-color: rgb(241, 239, 226);
+}
+
+.textKanan {
+  font-size: 15px;
+}
+
+.bullets {
+  margin-left: -24px;
+}
+
+.portfolio {
+  background-color: #dae0db;
+}
+
+.portfolio .img-thumbnail {
+  opacity: 0;
+  transform: translate(0, -40px);
+  transition: 0.5s;
+}
+
+.portfolio .img-thumbnail.muncul {
+  opacity: 1;
+  transform: translate(0, 0);
+}

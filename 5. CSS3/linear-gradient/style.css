@@ -1,0 +1,19 @@
+/* linear-gradient bukan property css3, melainkan  value untuk background-image */
+/* kenapa background-image dan bukan background-color? supaya kita bisa menggunakan background-color dan background-image secara bersamaan */
+
+/* implementasi? */
+.container {
+  width: 600px;
+  height: 300px;
+  margin: 50px auto;
+  /* background-image: linear-gradient(red, #f0d606, rgba(255, 255, 0, 1), green); */
+
+  /* diagonal */
+  /* background-image: linear-gradient(45deg, red, green); */
+
+  /* arah */
+  background-image: linear-gradient(to bottom right, red, green);
+
+  /* color stop */
+  background-image: linear-gradient(to right, red 63%, green 80%);
+}
