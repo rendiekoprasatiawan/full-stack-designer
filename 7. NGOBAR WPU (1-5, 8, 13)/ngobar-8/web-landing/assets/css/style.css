@@ -1,32 +1,37 @@
 /* fonts */
+
 @font-face {
-  font-family: "oswaldregular";
-  src: url("../../fonts/oswald-variablefont_wght-webfont.woff2") format("woff2"),
-    url("../../fonts/oswald-variablefont_wght-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
+  font-family: "Oswald";
+  src: url("../../fonts/Oswald-VariableFont_wght.ttf") format("truetype");
 }
+
 @font-face {
-  font-family: "vigaregular";
+  font-family: "Viga";
   src: url("../../fonts/viga-regular-webfont.woff2") format("woff2"),
     url("../../fonts/viga-regular-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
-/* pake fonts */
-.pFonts {
-  font-family: "oswaldregular";
+/* using fonts */
+.portFont {
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
 }
+
+.pFonts {
+  font-family: "Oswald", sans-serif;
+}
+
 /* navbar */
 .navbar {
   position: relative;
   z-index: 2;
-  /* background-color: #dbdad7; */
 }
 
 .navbar-brand {
-  font-family: "vigaregular";
+  font-family: "Viga";
   font-size: 32px;
 }
 
@@ -166,30 +171,17 @@
   margin-bottom: 40px;
 }
 
-.pKiri p {
+/* .pKiri p {
   font-size: 14.5px;
   color: #000;
-}
+} */
 
-.pKiri ul {
-  margin-left: -24px;
-}
-.pKiri .balikin {
-  margin-left: 24px;
-}
-
-.pKiri ul li {
+/* .pKiri .li {
   font-size: 14.5px;
   color: #000;
-}
-
-.portFont {
-  font-family: "oswaldregular";
-  text-transform: uppercase;
-}
+} */
 
 .pKanan {
-  /* background-color: #cddbc5; */
   background-image: url(../../img/bg-white.jpg);
   background-attachment: fixed;
   background-position: center;
@@ -200,13 +192,9 @@
   border-right: 11.5px dashed rgba(0, 0, 0, 0.3);
 }
 
-.pKanan ul {
-  margin-left: -20px;
-}
-
-.pKanan .balikinKanan {
-  margin-left: 0px;
-}
+/* .pKanan .li {
+  font-size: 15.3px;
+} */
 
 /* contact */
 .sCard {
@@ -223,8 +211,12 @@
 .footer {
   background-color: #dbdad7;
   margin-top: 80px;
-  padding: 3px;
-  /* margin-bottom: 0; */
+  padding: 1px;
+}
+
+.footer h6 {
+  font-size: 10px;
+  margin-top: 6px;
 }
 
 /* utility */
@@ -277,6 +269,11 @@
 
   .jumbotron .display-4 {
     font-size: 62px;
+  }
+
+  .hJumbo {
+    width: 70%;
+    margin-left: 15%;
   }
 
   .documentation h3 {
